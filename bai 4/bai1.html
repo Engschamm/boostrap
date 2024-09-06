@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Viện Hình Ảnh</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f5f5f5;
+        }
+        .header-title {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .header-subtitle {
+            font-size: 14px;
+            color: gray;
+        }
+        .thumbnail-container {
+            padding: 20px 0;
+        }
+        .thumbnail {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+            height: 250px; 
+        }
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+        .thumbnail img {
+            max-height: 150px; 
+            width: auto; 
+            margin: auto; 
+            display: block;
+        }
+        .footer {
+            background-color: #f9c1c1;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer-text {
+            font-size: 14px;
+            color: rgb(53, 16, 16);
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="header-title">THƯ VIỆN HÌNH ẢNH</div>
+    <div class="header-subtitle">Nhấn vào để Phóng to hình ảnh <br> bấm vào để xem ảnh của em nhé cô !!!</div>
+</div>
+
+<!-- Thumbnails Section -->
+<div class="container thumbnail-container">
+    <div class="row justify-content-center">
+        <!-- Thumbnail 1 -->
+        <div class="col-sm-6 col-md-4 text-center">
+            <a href="#" data-toggle="modal" data-target="#imageModal1">
+                <div class="thumbnail">
+                    <img src="image/331614439_751740499631641_5547102874646755799_n.jpg" alt="Hình cô gái" class="img-fluid">
+                    <div>Hình cô gái</div>
+                </div>
+            </a>
+        </div>
+        <!-- Thumbnail 2 -->
+        <div class="col-sm-6 col-md-4 text-center">
+            <a href="#" data-toggle="modal" data-target="#imageModal2">
+                <div class="thumbnail">
+                    <img src="image/332149563_1207747289855207_2508432432669729791_n.jpg" alt="Hình bông hoa" class="img-fluid">
+                    <div>Hình bông hoa</div>
+                </div>
+            </a>
+        </div>
+        <!-- Thumbnail 3 -->
+        <div class="col-sm-6 col-md-4 text-center">
+            <a href="#" data-toggle="modal" data-target="#imageModal3">
+                <div class="thumbnail">
+                    <img src="image/328252840_938689760645794_8808636582356515558_n.jpg" alt="Hình cái cây" class="img-fluid">
+                    <div>Hình cái cây</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Image Modals -->
+<div class="modal fade" id="imageModal1" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="image/331614439_751740499631641_5547102874646755799_n.jpg" class="img-fluid" alt="Hình cô gái">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal2" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="image/332149563_1207747289855207_2508432432669729791_n.jpg" class="img-fluid" alt="Hình bông hoa">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="imageModal3" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="image/328252840_938689760645794_8808636582356515558_n.jpg" class="img-fluid" alt="Hình cái cây">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-text">Sinh viên thực hiện: Ngọc ánh đẹp gái đáng iu</div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

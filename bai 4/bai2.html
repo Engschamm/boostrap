@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schools.com</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 140px; 
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0; 
+            background-color: white; 
+            position: fixed; 
+            width: 100%;
+            top: 0;
+            z-index: 1020; 
+        }
+        .header-title {
+            font-weight: bold;
+            font-size: 35px;
+        }
+        .header-title span {
+            color: green; 
+        }
+        .header-subtitle {
+            font-size: 14px;
+            font-weight: bold;
+            color: black; 
+            font-family: Courier;
+            word-spacing: 5px;
+        }
+        .navbar-custom {
+            background-color: green; 
+            top: auto; 
+            position: fixed;
+            width: 100%;
+            z-index: 1010; 
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: white; 
+            font-family: Courier;
+            margin-right: 20px; /* Adds spacing between menu items */
+        }
+        .dropdown-menu {
+            background-color:darkgray; 
+        }
+        .dropdown-menu .dropdown-item {
+            color: white; 
+        }
+        .sidebar {
+            height:70vh;
+            padding-top: 50px;
+            background-color: #f8f9fa; 
+            color:black;
+            -moz-box-shadow: 3px 3px 5px 0px #666;
+            -webkit-box-shadow: 3px 3px 5px 0px #666;
+            box-shadow: 3px 3px 5px 0px #666;
+        }
+        .sidebar .nav-link {
+            color: black; 
+        }
+        .main-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            margin-top: 200px; 
+        }
+        .main-content h1 {
+            font-size: 80px; 
+            color:black;
+        }
+        .footer {
+            background-color: #d3d3d3;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: auto; /* Ensures footer is pushed to the bottom of the page */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header with Title and Subtitle -->
+<header class="header">
+    <div class="header-title">
+        schools<span>.com</span>
+    </div>
+    <div class="header-subtitle">
+        THE WORLD'S LARGEST WEB DEVELOPER SITE
+    </div>
+</header>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="tutorialsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TUTORIALS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="tutorialsDropdown">
+                        <a class="dropdown-item" href="#">HTML</a>
+                        <a class="dropdown-item" href="#">CSS</a>
+                        <a class="dropdown-item" href="#">JavaScript</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="referencesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        REFERENCES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="referencesDropdown">
+                        <a class="dropdown-item" href="#">HTML Reference</a>
+                        <a class="dropdown-item" href="#">CSS Reference</a>
+                        <a class="dropdown-item" href="#">JavaScript Reference</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="examplesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        EXAMPLES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="examplesDropdown">
+                        <a class="dropdown-item" href="#">HTML Examples</a>
+                        <a class="dropdown-item" href="#">CSS Examples</a>
+                        <a class="dropdown-item" href="#">JavaScript Examples</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 d-none d-md-block sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">HTML and CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn HTML</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn W3.CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn Graphics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn How To</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Learn Sass</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4 main-content">
+            <div>
+                <h1 class="h1">HTML</h1>
+                <p class="lead">The language for building web pages</p>
+                <button type="button" class="btn btn-dark">Learn HTML</button>
+                <button type="button" class="btn btn-secondary">HTML Reference</button>
+            </div>
+        </main>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2024 Schools.com | All Rights Reserved</p>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

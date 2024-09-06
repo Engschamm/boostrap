@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENGSCHAMM - Flower Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Garamond', serif;
+            color: #333;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #D2698B; /* Pinkish color */
+        }
+        .navbar-nav .nav-link {
+            font-size: 1rem;
+            color: #333;
+        }
+        .hero-section {
+            background-color: #f9f9f9;
+            padding: 40px 0; /* Reduce padding to make section shorter */
+            text-align: left;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-top: 20px;
+        }
+        .hero-section img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; /* Limit the height of the image */
+        }
+        .product-grid {
+            padding: 40px 0;
+        }
+        .product-grid .card {
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-grid .card:hover {
+            transform: translateY(-5px);
+        }
+        .product-grid .card img {
+            border-radius: 0;
+        }
+        .product-grid .card-body {
+            text-align: center;
+        }
+        .product-grid .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .product-grid .card-text {
+            color: #D2698B;
+            font-size: 1rem;
+        }
+        .filter-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filter-section a {
+            color: #666;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .filter-section a.active {
+            color: #D2698B;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Engschamm florist</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart (0)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container hero-section">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Send <span style="color: #D2698B;">flowers</span> like you mean it.</h1>
+                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="image/nền.webp" alt="Hero Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <a href="#" class="active">All</a>
+        <a href="#">Popular</a>
+        <a href="#">Winter</a>
+        <a href="#">Various</a>
+        <a href="#">Exotic</a>
+        <a href="#">Greens</a>
+        <a href="#">Cactuses</a>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="container product-grid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/ảnh hoa.webp" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Cactus</h5>
+                        <p class="card-text">Sold</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/hoaxanh.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Lily Flower</h5>
+                        <p class="card-text">Buy Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/hoasen.webp" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Succulent</h5>
+                        <p class="card-text">Buy Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="image/hoatim.jpg" class="card-img-top" alt="Product 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tulip</h5>
+                        <p class="card-text">Buy Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
